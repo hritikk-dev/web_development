@@ -1,5 +1,5 @@
 .spiner{
-    background-color: orangered;
+    background-color: #0091c566;
     height: 500px;
     width: 500px;
     border-radius: 50%;
@@ -11,4 +11,9 @@
     to{
         transform: rotate(360deg);
     }
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

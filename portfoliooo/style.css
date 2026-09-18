@@ -1,0 +1,688 @@
+/* ==========================
+   GOOGLE FONT
+========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f3fa;
+}
+
+/* ==========================
+      HEADER
+========================== */
+
+header{
+
+    width:100%;
+    height:70px;
+    background:#fff;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 35px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.05);
+
+}
+
+/* Logo */
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+}
+
+.logo i{
+
+    color:#a855f7;
+    font-size:28px;
+
+}
+
+.logo h2{
+
+    color:#a855f7;
+    font-size:30px;
+    font-weight:700;
+
+}
+
+/* Search */
+
+.search{
+
+    width:430px;
+    height:45px;
+
+    background:#f6f6f6;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 18px;
+
+    border-radius:30px;
+
+}
+
+.search input{
+
+    width:100%;
+    border:none;
+    outline:none;
+    background:transparent;
+
+    margin-left:10px;
+
+    font-size:15px;
+
+}
+
+.search i{
+
+    color:#777;
+
+}
+
+/* Right Header */
+
+.right-header{
+
+    display:flex;
+    align-items:center;
+    gap:22px;
+
+}
+
+.right-header img{
+
+    width:42px;
+    height:42px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.right-header span{
+
+    font-weight:600;
+
+}
+
+.right-header i{
+
+    cursor:pointer;
+    color:#555;
+    transition:.3s;
+
+}
+
+.right-header i:hover{
+
+    color:#a855f7;
+
+}
+
+
+/* ==========================
+      NAVBAR
+========================== */
+
+nav{
+    width:100%;
+    height:60px;
+    background:linear-gradient(90deg,#a855f7,#8b5cf6);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:35px;
+    padding:0 20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#fff;
+    font-size:14px;
+    font-weight:500;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    transition:.3s;
+}
+
+nav a:hover{
+    opacity:.8;
+}
+
+nav a i{
+    font-size:15px;
+}
+
+/* ==========================
+      MAIN
+========================== */
+
+main{
+    width:92%;
+    margin:30px auto;
+}
+
+/* ==========================
+      WELCOME
+========================== */
+
+.welcome{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.welcome h1{
+    font-size:34px;
+    color:#222;
+    font-weight:700;
+}
+
+.welcome p{
+    margin-top:5px;
+    color:#888;
+    font-size:15px;
+}
+
+.welcome span{
+    color:#777;
+    font-size:14px;
+}
+
+/* ==========================
+      BANNER
+========================== */
+
+.banner{
+    background:#fff5cf;
+    border-radius:18px;
+    padding:35px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+    overflow:hidden;
+}
+
+.banner-text{
+    width:55%;
+}
+
+.banner-text h2{
+    font-size:30px;
+    color:#222;
+    line-height:42px;
+    margin-bottom:15px;
+}
+
+.banner-text p{
+    color:#666;
+    line-height:28px;
+    margin-bottom:25px;
+}
+
+.banner button{
+    background:#2196f3;
+    color:#fff;
+    border:none;
+    padding:12px 32px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+.banner button:hover{
+    background:#1976d2;
+}
+
+.banner-image{
+    width:40%;
+    text-align:right;
+}
+
+.banner-image img{
+    width:100%;
+    max-width:340px;
+}
+
+
+
+/* ==========================
+        DASHBOARD CARDS
+========================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+    margin-bottom:30px;
+}
+
+.card{
+    position:relative;
+    overflow:hidden;
+    padding:30px;
+    border-radius:18px;
+    color:#fff;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+}
+
+/* Background Gradients */
+
+.receivable{
+    background:linear-gradient(135deg,#ff9a9e,#ff5e8a);
+}
+
+.payable{
+    background:linear-gradient(135deg,#8b5cf6,#b86cff);
+}
+
+/* Decorative Circle */
+
+.card::before{
+    content:"";
+    position:absolute;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:rgba(255,255,255,.12);
+    top:-70px;
+    right:-60px;
+}
+
+.card::after{
+    content:"";
+    position:absolute;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    bottom:-40px;
+    right:20px;
+}
+
+/* Heading */
+
+.card h2{
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:25px;
+    position:relative;
+    z-index:2;
+}
+
+/* Progress Bar */
+
+.progress{
+    width:100%;
+    height:10px;
+    background:rgba(255,255,255,.30);
+    border-radius:30px;
+    overflow:hidden;
+    position:relative;
+    z-index:2;
+}
+
+.progress::before{
+    content:"";
+    width:72%;
+    height:100%;
+    background:#fff;
+    display:block;
+    border-radius:30px;
+}
+
+/* Amount Section */
+
+.amount{
+    display:flex;
+    justify-content:space-between;
+    margin-top:35px;
+    position:relative;
+    z-index:2;
+}
+
+.amount h1{
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+.amount p{
+    font-size:14px;
+    opacity:.9;
+}
+
+/* Divider */
+
+.amount div:first-child{
+    border-right:1px solid rgba(255,255,255,.35);
+    padding-right:35px;
+}
+
+.amount div:last-child{
+    padding-left:35px;
+}
+
+
+
+/* ==========================================
+            BOTTOM SECTION
+========================================== */
+
+.bottom{
+    display:grid;
+    grid-template-columns:260px 260px 1fr;
+    gap:25px;
+    margin-top:30px;
+}
+
+/* ==========================================
+            SMALL CARDS
+========================================== */
+
+.small-card{
+    background:#fff;
+    border-radius:18px;
+    padding:30px 25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    text-align:center;
+}
+
+.small-card:hover{
+    transform:translateY(-6px);
+}
+
+.small-card i{
+    width:75px;
+    height:75px;
+    line-height:75px;
+    border-radius:15px;
+    font-size:30px;
+    color:#fff;
+    margin-bottom:20px;
+}
+
+.small-card:first-child i{
+    background:linear-gradient(135deg,#8b5cf6,#b86cff);
+}
+
+.small-card:last-child i{
+    background:linear-gradient(135deg,#ff9a9e,#ff5e8a);
+}
+
+.small-card h1{
+    font-size:30px;
+    color:#333;
+    margin-bottom:8px;
+}
+
+.small-card p{
+    color:#888;
+    font-size:15px;
+}
+
+/* ==========================================
+            TABLE CARD
+========================================== */
+
+.table-card{
+    background:#fff;
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.table-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.table-header h2{
+    color:#333;
+    font-size:24px;
+}
+
+.table-header a{
+    color:#8b5cf6;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.table-header a:hover{
+    text-decoration:underline;
+}
+
+/* ==========================================
+            TABLE
+========================================== */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table tr{
+    transition:.3s;
+}
+
+table tr:hover{
+    background:#f8f8ff;
+}
+
+table td,
+table th{
+    padding:16px;
+    border-bottom:1px solid #ececec;
+    text-align:left;
+    color:#555;
+}
+
+table th{
+    color:#222;
+    font-size:16px;
+    font-weight:600;
+}
+
+table tr:last-child td,
+table tr:last-child th{
+    border-bottom:none;
+}
+
+
+/* ===========================
+      RESPONSIVE DESIGN
+=========================== */
+
+@media (max-width:1200px){
+
+    .cards{
+        grid-template-columns:1fr;
+    }
+
+    .bottom{
+        grid-template-columns:1fr;
+    }
+
+    .banner{
+        flex-direction:column;
+        text-align:center;
+        gap:30px;
+    }
+
+    .banner-text{
+        width:100%;
+    }
+
+    .banner-image{
+        width:100%;
+        text-align:center;
+    }
+
+}
+
+
+/* Tablet */
+
+@media (max-width:992px){
+
+    header{
+        padding:15px 20px;
+        flex-wrap:wrap;
+        height:auto;
+        gap:15px;
+    }
+
+    .search{
+        width:100%;
+        order:3;
+    }
+
+    nav{
+        flex-wrap:wrap;
+        height:auto;
+        padding:15px;
+        gap:20px;
+    }
+
+    .welcome{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
+
+}
+
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .logo h2{
+        font-size:24px;
+    }
+
+    .right-header span{
+        display:none;
+    }
+
+    .banner{
+        padding:20px;
+    }
+
+    .banner-text h2{
+        font-size:24px;
+        line-height:34px;
+    }
+
+    .banner-image img{
+        width:260px;
+    }
+
+    .amount{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .amount div:first-child{
+        border:none;
+        padding-right:0;
+    }
+
+    .amount div:last-child{
+        padding-left:0;
+    }
+
+}
+
+
+/* Small Mobile */
+
+@media (max-width:576px){
+
+    main{
+        width:95%;
+    }
+
+    nav{
+        justify-content:flex-start;
+    }
+
+    nav a{
+        font-size:13px;
+    }
+
+    .welcome h1{
+        font-size:26px;
+    }
+
+    .small-card h1{
+        font-size:24px;
+    }
+
+    .table-card{
+        overflow-x:auto;
+    }
+
+    table{
+        min-width:500px;
+    }
+
+}
+
+
+/* ===========================
+      SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#9b5cff;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f1f1f1;
+}
+
+
+/* ===========================
+      SELECTION
+=========================== */
+
+::selection{
+    background:#9b5cff;
+    color:#fff;
+}

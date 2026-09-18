@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple Dashboard</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="logo">
+            <i class="fa-solid fa-layer-group"></i>
+            <h2>Purple</h2>
+        </div>
+
+        <div class="search">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                placeholder="Search Projects">
+
+        </div>
+
+        <div class="right-header">
+
+            <img src="data:image/jpeg;base64,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" alt="Img to be Load">
+
+            <span>Sara Reley</span>
+
+            <i class="fa-regular fa-envelope"></i>
+
+            <i class="fa-regular fa-bell"></i>
+
+            <i class="fa-solid fa-power-off"></i>
+
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav>
+
+        <a href="#">
+            <i class="fa-solid fa-house"></i>
+            Home
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-chart-line"></i>
+            Financials
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-box"></i>
+            Stock Control
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Purchasing
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-coins"></i>
+            Sales
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-briefcase"></i>
+            Services
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-file"></i>
+            Reporting
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-hammer"></i>
+            Manufacturing
+        </a>
+
+    </nav>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+        <!-- Welcome -->
+
+        <section class="welcome">
+
+            <div>
+
+                <h1>Hi, Welcome Back!</h1>
+
+                <p>Your ERP admin template</p>
+
+            </div>
+
+            <span>Thursday , 17 Sep 2026</span>
+
+        </section>
+
+
+
+        <!-- Banner -->
+
+        <section class="banner">
+
+            <div class="banner-text">
+
+                <h2>
+                    Discuss what you are doing and
+                    how we can help.
+                </h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.
+                </p>
+
+                <button>Overview</button>
+
+            </div>
+
+            <div class="banner-image">
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwAkO9puL3bVfeJY_3PBJt3MH_6rqIbhsm0dPhx0VwNg&s=10" alt="banner">
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Gradient Cards -->
+
+        <section class="cards">
+
+            <div class="card receivable">
+
+                <h2>Total Receivable</h2>
+
+                <div class="progress"></div>
+
+                <div class="amount">
+
+                    <div>
+
+                        <h1>$1645.00</h1>
+
+                        <p>Current</p>
+
+                    </div>
+
+                    <div>
+
+                        <h1>$2273.00</h1>
+
+                        <p>Overdue</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="card payable">
+
+                <h2>Total Payables</h2>
+
+                <div class="progress"></div>
+
+                <div class="amount">
+
+                    <div>
+
+                        <h1>$2345.00</h1>
+
+                        <p>Current</p>
+
+                    </div>
+
+                    <div>
+
+                        <h1>$1243.00</h1>
+
+                        <p>Overdue</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Bottom -->
+
+        <section class="bottom">
+
+
+            <div class="small-card">
+
+                <i class="fa-solid fa-dollar-sign"></i>
+
+                <h1>$32,459.00</h1>
+
+                <p>Total Income</p>
+
+            </div>
+
+
+            <div class="small-card">
+
+                <i class="fa-solid fa-wallet"></i>
+
+                <h1>$23,361.00</h1>
+
+                <p>Budget</p>
+
+            </div>
+
+
+
+            <div class="table-card">
+
+                <div class="table-header">
+
+                    <h2>Order Status</h2>
+
+                    <a href="#">View Now</a>
+
+                </div>
+
+                <table>
+
+                    <tr>
+
+                        <td>Total Income</td>
+
+                        <td>$43100</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>Total Expense</td>
+
+                        <td>$17000</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <th>Total</th>
+
+                        <th>$60100</th>
+
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

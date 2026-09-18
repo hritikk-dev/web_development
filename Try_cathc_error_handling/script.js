@@ -3,8 +3,7 @@
 let a = prompt("enter 1st number ");  // innme dono me number bhi input krengre to string me hi input hoga int me nhi
 let b = prompt("enter 2nd number "); // innme dono me number bhi input krengre to string me hi input hoga int me nhi
 
-let sum = parseInt(a) + parseInt(b);  // convert a string into integer value
-
+// let sum = parseInt(a) + parseInt(b);  // convert a string into integer value
 // agar a = "hello " de ya fir koi word to output me error nhi dega output me NaN (Not a Number) dega lekin hmm chahte hai ki yesse me error de to ek condition ka use krenge
 // agar javascript me code me error aa jaye to code uske aage run nhi hoga
 

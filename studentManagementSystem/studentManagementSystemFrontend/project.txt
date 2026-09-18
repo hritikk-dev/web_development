@@ -1,0 +1,5 @@
+ek home page aur ispe list of student show krenge
+ek add student page
+ek get all student
+ek delete student
+ek update student

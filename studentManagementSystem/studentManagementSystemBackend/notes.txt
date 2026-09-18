@@ -1,0 +1,5 @@
+POST -> /students new student add krna
+GET -> /students sab students ki list lana
+GET -> /students/:id  ek specific student ki details lana
+PUT -> /students/:id student ki details update krna
+DELETE -> /student/:id student delete krna 
